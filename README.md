@@ -1,4 +1,11 @@
-# CircleStories by CircleTable
+# CSS Editors
+Team Go Stop - Angela Zhang and Rayat Roy <br>
+SoftDev PD1 <br>
+K20 -- CSS Styling <br>
+2021-11-29 <br>
+time spent: 2 hours <br>
+
+## CircleStories by CircleTable
 Christopher Liu: Project Manager, Auth, Component Integration<br>
 Yusuf Elsharawy: Story Database Management, Routing<br>
 Deven Maheshwari: Frontend Design, User Database Management, QA<br>
