@@ -1,9 +1,9 @@
 # CSS Editors
-Team Go Stop - Angela Zhang and Rayat Roy 
-SoftDev PD1 
-K20 -- CSS Styling 
-2021-11-29 
-time spent: 2 hours 
+Team Go Stop - Angela Zhang and Rayat Roy <br>
+SoftDev PD1 <br>
+K20 -- CSS Styling <br>
+2021-11-29 <br>
+time spent: 2 hours <br>
 
 ## CircleStories by CircleTable
 Christopher Liu: Project Manager, Auth, Component Integration<br>
