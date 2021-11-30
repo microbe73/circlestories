@@ -13,7 +13,7 @@
     <h1>Welcome, {{ username }}!</h1>
     <h2>
         You are successfully logged in. Create a
-        <a href="{{ url_for('new_story') }}">new story</a> or add to an
+        <a href="{{ url_for('new_story') }}" style="color: blueviolet; text-decoration: none; font-size: larger;">new story</a> or add to an
         existing one!
     </h2>
     <div style="display: inline-block;">
@@ -22,13 +22,13 @@
         <ul>
             {% for story_id, story_creator, story_title in not_contributed_stories %}
             <li>
-                <a href="{{ url_for('story', story_id=story_id) }}">{{ story_title }}</a>
+                <a href="{{ url_for('story', story_id=story_id) }}" style="color: blueviolet; text-decoration: none;">{{ story_title }}</a>
                 by <b>{{ story_creator|default("Unknown User") }}</b>
             </li>
             {% endfor %}
         </ul>
         {% else %}
-        <p>
+        <p style="font-style: italic;">
             You've contributed to every story!
         </p>
     </div>
@@ -39,13 +39,13 @@
         <ul>
             {% for story_id, story_creator, story_title in contributed_stories %}
             <li>
-                <a href="{{ url_for('story', story_id=story_id) }}">{{ story_title }}</a>
+                <a href="{{ url_for('story', story_id=story_id) }}" style="color: blueviolet; text-decoration: none;">{{ story_title }}</a>
                 by <b>{{ story_creator|default("Unknown User") }}</b>
             </li>
             {% endfor %}
         </ul>
         {% else %}
-        <p>
+        <p style="font-style: italic;">
             You haven't contributed to any stories yet!
         </p>
     </div>

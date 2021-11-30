@@ -13,20 +13,22 @@
         <title>{% block title %}TITLE NEEDED{% endblock %} - CircleStories</title>
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
     </head>
-    <body>
-        {% block body %}
-            {% block nav %}
-                <!-- Nav -->
-                <p>
-                    <a style ="border-style: double; color: red; font-size: 16; background-color: yellow" href="{{ url_for('index') }}">Home</a>
-                    {% if "username" in session %}
-                    <a href="{{ url_for('logout') }}">Logout</a>
-                    {% endif %}
-                </p>
+    <div style="background-color: cornflowerblue; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 20px;">
+        <body>
+            {% block body %}
+                {% block nav %}
+                    <!-- Nav -->
+                    <p>
+                        <a href="{{ url_for('index') }}" style ="border-style: double; color: red; font-size: 16; background-color: white">Home</a>
+                        {% if "username" in session %}
+                        <a href="{{ url_for('logout') }}" style ="border-style: double; color: red; font-size: 16; background-color: white">Logout</a>
+                        {% endif %}
+                    </p>
+                {% endblock %}
+                {% block content %}
+                    CONTENT NEEDED
+                {% endblock %}
             {% endblock %}
-            {% block content %}
-                CONTENT NEEDED
-            {% endblock %}
-        {% endblock %}
-    </body>
+        </body>
+    </div>
 </html>
