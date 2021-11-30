@@ -12,11 +12,15 @@
 {% block content %}
     <h1>
         Welcome to CircleStories, an interactive and collaborative
-        storytelling game!</h1>
-    <h3>
+        storytelling game!
+    </h1>
+        <br>
+    <h3 style="text-align: center; font-style: italic; padding: 20px; border: cyan; border-style: ridge;">
         Log in to contribute an entry to an existing story or start your
         own!
     </h3>
-    <h2>Please <a href="{{ url_for('login') }}">log in</a> or
-        <a href="{{ url_for('register') }}">register</a> to continue.</h2>
+        <br>
+    <h2>Please <a href="{{ url_for('login') }}" style="color: blueviolet; text-decoration: none;">log in</a> or
+        <a href="{{ url_for('register') }}" style="color: blueviolet; text-decoration: none;">register</a> to continue.
+    </h2>
 {% endblock %}
